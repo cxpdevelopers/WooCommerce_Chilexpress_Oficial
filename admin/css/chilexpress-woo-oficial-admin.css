@@ -1,0 +1,25 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ a[href=admin.php?page=chilexpress_woo_oficial_generar_ot] {
+ 	display:none;
+ }
+
+ .chilexpress-modules-form small {
+ 	color: #777;
+ 	display: block;
+ 	margin-top: 0.5em;
+ 	margin-bottom: 1em;
+ }
+ #toplevel_page_chilexpress_woo_oficial_menu .wp-submenu li:last-child a{
+ 	display: none;
+ }
+
+ @media screen and (max-width: 782px) {
+	.wc-backbone-modal .wc-backbone-modal-content {
+		width: 100%;
+		height: 100%;
+		min-width: 100%;
+	}
+}
