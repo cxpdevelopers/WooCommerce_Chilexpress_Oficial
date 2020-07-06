@@ -11,6 +11,21 @@
 
 .wc-backbone-modal * {
 	box-sizing: border-box;
+	font-size: 13px;
+	font-weight: 600;
+	color: #444;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+}
+.wc-backbone-modal h2{
+	display: block;
+	font-weight: 600;
+	color: #23282d;
+    font-size: 1.3em;
+	margin: 1em 0;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	line-height: 1.4em;
 }
 
 .wc-backbone-modal .wc-backbone-modal-content {

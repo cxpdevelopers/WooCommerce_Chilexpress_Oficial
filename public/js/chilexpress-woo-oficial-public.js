@@ -91,7 +91,8 @@
 	 		});
 	 	// A veces solo a veces, solo cambia el county pero no el city asi que en ese caso debemos solo trabajar con el city
 	 	} else if ($('.woocommerce-shipping-calculator input[type=text][name=calc_shipping_city]').length) {
-	 		var $city = $('.woocommerce-shipping-calculator input[type=text][name=calc_shipping_city]');
+			var $city = $('.woocommerce-shipping-calculator input[type=text][name=calc_shipping_city]');
+			var $state = $('.woocommerce-shipping-calculator select[name=calc_shipping_state]');
 		 	var $city_parent = $city.parents('p');
 		 	var city_value = $city.val();		 	
 		 	var $new_city = $('<select name="calc_shipping_city" style="width: 100%" class="wc-enhanced-select" id="calc_shipping_cityx" placeholder="'+$city.attr('placeholder')+'" data-placeholder="'+$city.attr('placeholder')+'"><option value="'+city_value+'" selected="selected"> Cargando Comuna...</option></select>');
@@ -122,7 +123,7 @@
 
 			$("#calc_shipping_state,#calc_shipping_statex").on('change', function(event) {
 
-				state_value = $new_state.val();
+				state_value = $state.val();
 				city_value = $new_city.val();
 				$new_city.html('<option value="'+city_value+'" selected="selected"> Cargando Comuna...</option>')
 

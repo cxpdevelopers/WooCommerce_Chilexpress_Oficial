@@ -189,7 +189,22 @@ class Chilexpress_Woo_Oficial {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-
+		$this->loader->add_filter( 'woocommerce_shipping_fields', $plugin_public, 'chilexpress_woo_oficial_change_city_to_dropdown', 10 );
+		$this->loader->add_filter( 'woocommerce_checkout_fields', $plugin_public, 'chilexpress_woo_oficial_change_city_to_dropdown', 20 );
+		$this->loader->add_filter( 'woocommerce_checkout_fields', $plugin_public, 'checkout_fields_override', 30);
+		$this->loader->add_action( 'woocommerce_checkout_update_order_meta', $plugin_public, 'custom_checkout_field_update_order_meta' );
+		$this->loader->add_filter( 'woocommerce_default_address_fields', $plugin_public, 'reorder_fields') ;
+		$this->loader->add_filter( 'woocommerce_default_address_fields' , $plugin_public, 'override_postcode_validation' );
+		$this->loader->add_action( 'woocommerce_review_order_before_cart_contents', $plugin_public, 'chilexpress_woo_oficial_validate_order', 10 );
+		$this->loader->add_action( 'woocommerce_after_checkout_validation', $plugin_public, 'chilexpress_woo_oficial_validate_order', 10 );
+		$this->loader->add_filter( 'woocommerce_states', $plugin_public, 'get_states' );
+		
+		$this->loader->add_filter( 'generate_rewrite_rules', $plugin_public ,'rewrite_pdf_label');
+		$this->loader->add_filter( 'query_vars', $plugin_public ,'add_pdf_label_query_vars');
+		$this->loader->add_action( 'template_redirect', $plugin_public ,'template_redirect_pdf_label'  );
+		
+		// $this->loader->add_filter( 'woocommerce_shipping_calculator_enable_city', '__return_true' );
+		// $this->loader->add_filter( 'woocommerce_shipping_calculator_enable_postcode', '__return_false' );
 	}
 
 	/**

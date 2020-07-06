@@ -388,7 +388,7 @@ class Chilexpress_Woo_Oficial_Admin {
 			$value = "134b01b545bc4fb29a994cddedca9379";
 		}
 	    ?>
-	    <input type='text' name='chilexpress_woo_oficial[api_key_georeferencia_value]' value='<? echo $value;?>' class="regular-text"> 
+	    <input type='text' name='chilexpress_woo_oficial[api_key_georeferencia_value]' value='<?php echo $value;?>' class="regular-text"> 
 	    <br /><small>Puedes encontrar esta Api Key, bajo el producto Coberturas en tu página de <a href="https://developers.wschilexpress.com/developer" target="_blank">perfil</a>.</small>
 	    <?php
 	}
@@ -413,7 +413,7 @@ class Chilexpress_Woo_Oficial_Admin {
 		}
 
 	    ?>
-	    <input type='text' name='chilexpress_woo_oficial[api_key_generacion_ot_value]' value='<? echo $value; ?>' class="regular-text"> 
+	    <input type='text' name='chilexpress_woo_oficial[api_key_generacion_ot_value]' value='<?php echo $value; ?>' class="regular-text"> 
 	    <br /><small>Puedes encontrar esta Api Key, bajo el producto Envíos en tu página de <a href="https://developers.wschilexpress.com/developer" target="_blank">perfil</a>.</small>
 	    <?php
 	}
@@ -438,7 +438,7 @@ class Chilexpress_Woo_Oficial_Admin {
 			$value = "fd46aa18a9fe44c6b49626692605a2e8";
 		}
 	    ?>
-	    <input type='text' name='chilexpress_woo_oficial[api_key_cotizador_value]' value='<? echo $value; ?>' class="regular-text"> 
+	    <input type='text' name='chilexpress_woo_oficial[api_key_cotizador_value]' value='<?php echo $value; ?>' class="regular-text"> 
 	    <br /><small>Puedes encontrar esta Api Key, bajo el producto Cotizador en tu página de <a href="https://developers.wschilexpress.com/developer" target="_blank">perfil</a>.</small>
 	    <?php
 	}
@@ -494,7 +494,7 @@ class Chilexpress_Woo_Oficial_Admin {
 	public function numero_tcc_origen_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[numero_tcc_origen]' value="<? if(isset($options['numero_tcc_origen'])) echo $options['numero_tcc_origen'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[numero_tcc_origen]' value="<?php if(isset($options['numero_tcc_origen'])) echo $options['numero_tcc_origen'];?>" class="regular-text"/>
 		<?php
 	}
 
@@ -503,32 +503,32 @@ class Chilexpress_Woo_Oficial_Admin {
 	public function nombre_remitente_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[nombre_remitente]' value="<? if(isset($options['nombre_remitente'])) echo $options['nombre_remitente'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[nombre_remitente]' value="<?php if(isset($options['nombre_remitente'])) echo $options['nombre_remitente'];?>" class="regular-text"/>
 		<?php
 	}
 	public function telefono_remitente_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[telefono_remitente]' value="<? if(isset($options['telefono_remitente'])) echo $options['telefono_remitente'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[telefono_remitente]' value="<?php if(isset($options['telefono_remitente'])) echo $options['telefono_remitente'];?>" class="regular-text"/>
 		<?php
 	}
 	public function email_remitente_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[email_remitente]' value="<? if(isset($options['email_remitente'])) echo $options['email_remitente'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[email_remitente]' value="<?php if(isset($options['email_remitente'])) echo $options['email_remitente'];?>" class="regular-text"/>
 		<?php
 	}
 	public function rut_seller_remitente_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[rut_seller_remitente]' value="<? if(isset($options['rut_seller_remitente'])) echo $options['rut_seller_remitente'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[rut_seller_remitente]' value="<?php if(isset($options['rut_seller_remitente'])) echo $options['rut_seller_remitente'];?>" class="regular-text"/>
 		<?php
 	}
 
 	public function rut_marketplace_remitente_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[rut_marketplace_remitente]' value="<? if(isset($options['rut_marketplace_remitente'])) echo $options['rut_marketplace_remitente'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[rut_marketplace_remitente]' value="<?php if(isset($options['rut_marketplace_remitente'])) echo $options['rut_marketplace_remitente'];?>" class="regular-text"/>
 		<?php
 	}
 
@@ -572,20 +572,20 @@ class Chilexpress_Woo_Oficial_Admin {
 	public function calle_devolucion_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[calle_devolucion]' value="<? if(isset($options['calle_devolucion']))  echo $options['calle_devolucion'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[calle_devolucion]' value="<?php if(isset($options['calle_devolucion']))  echo $options['calle_devolucion'];?>" class="regular-text"/>
 		<?php
 	}
 	public function numero_calle_devolucion_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[numero_calle_devolucion]' value="<? if(isset($options['numero_calle_devolucion']))  echo $options['numero_calle_devolucion'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[numero_calle_devolucion]' value="<?php if(isset($options['numero_calle_devolucion']))  echo $options['numero_calle_devolucion'];?>" class="regular-text"/>
 		<?php
 	}
 
 	public function complemento_devolucion_render() {
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 		?>
-		 <input type="text" name='chilexpress_woo_oficial_general[complemento_devolucion]' value="<? if(isset($options['complemento_devolucion']))  echo $options['complemento_devolucion'];?>" class="regular-text"/>
+		 <input type="text" name='chilexpress_woo_oficial_general[complemento_devolucion]' value="<?php if(isset($options['complemento_devolucion']))  echo $options['complemento_devolucion'];?>" class="regular-text"/>
 		<?php
 	}
 	
@@ -608,7 +608,7 @@ class Chilexpress_Woo_Oficial_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-		wp_enqueue_style('select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css' );
+		wp_enqueue_style('select2', plugin_dir_url( __FILE__ ). '../public/css/select2.min.css' );
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/chilexpress-woo-oficial-admin.css', array(), $this->version, 'all' );
 
 	}
@@ -633,7 +633,7 @@ class Chilexpress_Woo_Oficial_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
+		global $woocommerce;
 		/**
 		 * This function is provided for demonstration purposes only.
 		 *
@@ -648,7 +648,7 @@ class Chilexpress_Woo_Oficial_Admin {
 
 
 		// We need select2 to show fancy selects with search capabilities
-		wp_enqueue_script('select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js', array('jquery') );
+		wp_enqueue_script('select2', plugin_dir_url( __FILE__ ) . '../public/js/select2.min.js', array('jquery') );
 		// We need the the plugin admin js
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/chilexpress-woo-oficial-admin.js', array( 'jquery' ), $this->version, false );
 		// we use this ajax call to show get global  ars and the right nonce that we need
@@ -658,18 +658,14 @@ class Chilexpress_Woo_Oficial_Admin {
 	        'action' => 'event-list'
     	) );
 		// we need to show a modal for edit.php?post_type=shop_order
-
-		if ( is_dir( WP_PLUGIN_DIR . '/woocommerce-3.9.2' ) ) {
-			$backbone_path = '/wp-content/plugins/woocommerce-3.9.2/assets/js/admin/backbone-modal.js';
+		$backbone_url = '';
+		if ($woocommerce) {
+			$backbone_url =  $woocommerce->plugin_url().'/assets/js/admin/backbone-modal.js';	
 		}
-		elseif( is_dir( WP_PLUGIN_DIR . '/woocommerce') )
-		{
-			$backbone_path = '/wp-content/plugins/woocommerce/assets/js/admin/backbone-modal.js';
-		}
-
+		
     	wp_enqueue_script(
 		   'backbone-modal',
-		   get_site_url() . $backbone_path,
+		   $backbone_url,
 		   array('jquery', 'wp-util', 'backbone')
 		);
 
@@ -702,8 +698,8 @@ class Chilexpress_Woo_Oficial_Admin {
 			die( 'Missing Nonce' ); 
 		}
 
-		$action = isset($_GET['action'])?$_GET['action']:'generar_ot';
-		$order_id = intval($_GET['order_id']);
+		$action = isset($_GET['action'])?sanitize_text_field($_GET['action']):'generar_ot';
+		$order_id = isset($_GET['order_id'])?sanitize_text_field($_GET['order_id']):1;
 		if (!$order_id && $order_id < 0) {
 			die("Invalid Order Id");
 		}
@@ -734,7 +730,7 @@ class Chilexpress_Woo_Oficial_Admin {
 			//echo '<pre> '.print_r(get_post_meta($order_id,'shipping_address_3'), true).'</pre>';
 			$complemento = get_post_meta($order_id,'shipping_address_3', true)?get_post_meta($order_id,'shipping_address_3', true):get_post_meta($order_id,'billing_address_3', true);
 			//echo '<pre>'.print_r($complemento, true).'</pre>';
-			if (isset($_POST['subaction']) && $_POST['subaction'] == 'generar') {
+			if (isset($_POST['subaction']) && sanitize_text_field($_POST['subaction']) == 'generar') {
 
 				$payload_header = array(
 					    "certificateNumber" => 0, //Número de certificado, si no se ingresa se creará uno nuevo
@@ -749,7 +745,7 @@ class Chilexpress_Woo_Oficial_Admin {
 							        "countyCoverageCode"=>  $order_data["shipping"]["city"], // Cobertura de destino obtenido por la API Consultar Coberturas
 							        "streetName"=> $order_data["shipping"]["address_1"], // Nombre de la calle
 							        "streetNumber"=> $order_data["shipping"]["address_2"], // Numeración de la calle
-							        "supplement"=> $order_data["customer_note"], // Información complementaria de la dirección
+							        "supplement"=> $complemento, // Información complementaria de la dirección
 							        "addressType"=> "DEST", // Tipo de dirección; DEST = Entrega, DEV = Devolución.
 							        "deliveryOnCommercialOffice"=> false, // Indicador si es una entrega en oficina comercial (true) o entrega en domicilio (false)
 							        "commercialOfficeId"=> "",
@@ -780,7 +776,7 @@ class Chilexpress_Woo_Oficial_Admin {
 
 				$pre_paquetes = array();
 				$paquetes = array();
-				$opcion_paquetes = $_POST["paquetes"];
+				$opcion_paquetes = isset($_POST["paquetes"]) ? ($_POST["paquetes"]) : [];
 
 				foreach($opcion_paquetes as $prodid => $numero_paquete ):
 
@@ -856,6 +852,7 @@ class Chilexpress_Woo_Oficial_Admin {
 		  				)
 		  			)
 				);
+
 
 				$api = new Chilexpress_Woo_Oficial_API();
 				$result = $api->generar_ot($payload);
@@ -1004,7 +1001,7 @@ class Chilexpress_Woo_Oficial_Admin {
 				$out = array();
 				for($i = 0; $i <count($transportOrderNumbers); $i++) {
 					$encoded = $labelsData[$i];
-					$print_url = plugin_dir_url( __DIR__ ).'print-label.php?order_id='.$order_id;
+					$print_url = get_site_url().'?order_label='.$order_id;
 					$src = 'data:image/jpg;base64,'.$encoded;
 					require plugin_dir_path( __FILE__ ) . 'partials/chilexpress-woo-oficial-admin-labels.php';
 				}
@@ -1076,7 +1073,7 @@ class Chilexpress_Woo_Oficial_Admin {
 	}
 
 	public function obtener_comunas_desde_region_handle_ajax_request() {
-		$region	= isset($_POST['region'])?trim($_POST['region']):"";
+		$region	= isset($_POST['region'])? sanitize_text_field($_POST['region']):"";
 		$response	= array();
 		$response['message'] = "Successfull Request";
 		$comunas = $this->coverage_data->obtener_comunas($region);
@@ -1087,8 +1084,8 @@ class Chilexpress_Woo_Oficial_Admin {
 	}
 
 	public function track_order_handle_ajax_request() {
-		$ot	= isset($_POST['ot'])?trim($_POST['ot']):"";
-		$pid = isset($_POST['pid'])?trim($_POST['pid']):1;
+		$ot	= isset($_POST['ot'])?sanitize_text_field($_POST['ot']):"";
+		$pid = isset($_POST['pid'])?sanitize_text_field($_POST['pid']):1;
 		$options = get_option( 'chilexpress_woo_oficial_general' );
 
 		$order = wc_get_order( $pid );
